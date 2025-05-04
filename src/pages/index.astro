@@ -10,6 +10,7 @@ import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
+// import Precios from "@/components/Precios.astro"
 ---
 
 <Layout
@@ -28,17 +29,20 @@ import TitleSection from "@/components/TitleSection.astro"
         <Briefcase class="size-8" />
         Servicios
       </TitleSection>
+      <p class="text-gray-600 dark:text-gray-300">
+        En Facilito ofrecemos los siguientes servicios:
+      </p>
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
+    <!-- <SectionContainer id="proyectos">
       <TitleSection>
         <CodeIcon class="size-7" />
         Proyectos
       </TitleSection>
       <Projects />
     </SectionContainer>
-
+    -->
     <SectionContainer id="sobre-mi">
       <TitleSection>
         <ProfileCheck class="size-8" />
@@ -46,6 +50,14 @@ import TitleSection from "@/components/TitleSection.astro"
       </TitleSection>
       <AboutMe />
     </SectionContainer>
+
+  <!-- <SectionContainer id="precios">
+    <TitleSection>
+      <ProfileCheck class="size-8" />
+      Precios
+    </TitleSection>
+    <Precios />
+  </SectionContainer> -->
   </div>
   </main>
 </Layout>
